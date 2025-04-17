@@ -11,7 +11,7 @@ export default function CartPage() {
 
   return (
     <>
-      <h1 className="font-bold text-4xl mb-6"> Shopping Cart </h1>
+      <h1 className="font-bold text-black text-4xl mb-6"> Shopping Cart </h1>
       <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-8'>
         {cartProducts.map(product => (
           <Link key={product.id} href={"/products/" + product.id}>
@@ -23,7 +23,7 @@ export default function CartPage() {
                 height={300}
                 className="w-full h-64 object-contain rounded-lg mb-4"
               />
-              <h3 className="text-xl font-semibold text-gray-800 mb-2">{product.name}</h3>
+              <h3 className="text-3xl font-semibold text-gray-800 mb-2">{product.name}</h3>
               <p className='text-lg font-semibold text-gray-900'>${product.price}</p>
             </div>
           </Link>
